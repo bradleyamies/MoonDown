@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+
+	<title>
+		MoonDown - Heldesk
+	</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+</head>
+<body>
+	<!-- Top Navigation Bar -->
+	<nav class="navbar navbar-inverse navbar-top fixed-top">
+		<a class="navbar-brand" href="#"><i class="fas fa-moon"></i> Moondown - Helpdesk</a>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="#">
+					Logged in as Bradley Amies
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Side Navigation Bar -->
+	<nav class="navbar-side collapsed" >
+		<a class="btn-expand-collapse "><i id="navbarCollapseButton" class="fas fa-chevron-right"></i></a>
+		<ul class="navbar-side-menu">
+			<li>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Dashboard"><i class="fas fa-tachometer-alt" ></i><span class="nav-label"> Dashboard</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Calls"><i class="fas fa-book" ></i><span class="nav-label"> Calls</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Change Management"><i class="fas fa-exchange-alt" ></i><span class="nav-label"> Change Management</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Users"><i class="fas fa-users " ></i><span class="nav-label"> Users</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Third Parties"><i class="fas fa-address-book " ></i><span class="nav-label"> Third Parties</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Assets"><i class="fas fa-laptop" ></i><span class="nav-label"> Assets</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Communications"><i class="fas fa-phone" ></i><span class="nav-label"> Communications</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Surveys"><i class="fas fa-comments " ></i><span class="nav-label"> Surveys</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Reports"><i class="fas fa-chart-line " ></i><span class="nav-label"> Reports</span></a>
+				<a href="#" data-toggle="tooltip" data-placement="right" title="Settings"><i class="fas fa-cog"></i><span class="nav-label"> Settings</span></a>
+			</li>
+		</ul>
+	</nav>
+
+
+
+	
+	<div class="main-content" id="Dashboard">
+		<div class=dashboard-top>
+			<h1>Dashboard</h1>
+		</div>
+
+		<div class="row ">
+			<div class="col">
+				<div class="stat medium stat-hover">
+					<div class="label">Incidents</div>
+					<div class="count">25</div>
+					<div class="yesterday">Yesterday: 22</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="stat bad stat-hover">
+					<div class="label">Service Requests</div>
+					<div class="count">16</div>
+					<div class="yesterday">Yesterday: 12</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="stat good stat-hover">
+					<div class="label">Problems</div>
+					<div class="count">2</div>
+					<div class="yesterday">Yesterday: 2</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="stat good stat-hover">
+					<div class="label">RFCs</div>
+					<div class="count">11</div>
+					<div class="yesterday">Yesterday: 14</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="stat good stat-hover">
+					<div class="label">Tasks</div>
+					<div class="count">55</div>
+					<div class="yesterday">Yesterday: 58</div>
+				</div>
+			</div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col">
+				<div class="stat right medium">
+					<div class="label">SLA</div>
+					<div class="count">97.64%</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h3>Business Critical Calls</h3>
+				<table class="table" >
+					<thead class="thead-inverse">
+						<tr>
+							<th>Reference</th>
+							<th>Priority</th>
+							<th>Summary</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">HA087283</th>
+							<td>1</td>
+							<td>VPN Down</td>
+						</tr>
+						<tr>
+							<th scope="row">HA089473</th>
+							<td>2</td>
+							<td>October Leavers</td>
+						</tr>
+						<tr>
+							<th scope="row">HA084728</th>
+							<td>2</td>
+							<td>Request for account</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col">
+				<h3>Calls Due To Breach</h3>
+				<table class="table">
+					<thead class="thead-inverse">
+						<tr>
+							<th>Reference</th>
+							<th>Priority</th>
+							<th>Summary</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">HA087283</th>
+							<td>1</td>
+							<td>VPN Down</td>
+						</tr>
+						<tr>
+							<th scope="row">HA089473</th>
+							<td>2</td>
+							<td>October Leavers</td>
+						</tr>
+						<tr>
+							<th scope="row">HA084728</th>
+							<td>2</td>
+							<td>Request for account</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col">
+				<h3>Disk Space Alerts</h3>
+				<table class="table">
+					<thead class="thead-inverse">
+						<tr>
+							<th>Server</th>
+							<th>Drive</th>
+							<th>Percentage</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-warning">
+							<th scope="row">Server091</th>
+							<td>C:</td>
+							<td>92.57%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h3>Network Monitor</h3>
+				<table class="table">
+					<thead class="thead-inverse">
+						<tr>
+							<th>Status</th>
+							<th>Network Name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-danger">
+							<th scope="row">Unavailable</th>
+							<td>Humber Lodge</td>
+						</tr>
+						<tr class="table-danger">
+							<th scope="row">Unavailable</th>
+							<td>Server193</td>
+						</tr>
+						<tr class="table-danger">
+							<th scope="row">Unavailable</th>
+							<td>Kimberley Depot</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col">
+				<h3></h3>
+			</div>
+			<div class="col">
+				<h3></h3>
+			
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="Javascript/script.js"></script>
+	</body>
+	</html>

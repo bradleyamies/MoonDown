@@ -1,0 +1,186 @@
+/* Settings */
+:root {
+    --top-navbar-color: #303539;
+    --top-navbar-brand-color: #FFFFFF;
+    --side-navbar-color: #667079;
+    --side-navbar-active-color: #303539;
+    --side-navbar-hover-color: #303539;
+    --side-navbar-transition-time: 0.5s;
+}
+
+
+/* Navbar CSS Styling */
+
+.navbar-top {
+	background-color: var(--top-navbar-color);
+}
+
+.navbar-top .navbar-brand {
+	color: var(--top-navbar-brand-color);
+}
+
+.navbar-top .nav > li > a
+{
+	color: white;
+}
+
+.navbar-side {
+	background-color: var(--side-navbar-color);
+	bottom: 0px;
+	position: fixed;
+	top: 56px;
+	width: 200px;
+	overflow: hidden;
+	transition: var(--side-navbar-transition-time);
+}
+
+.navbar-side.collapsed {
+	width: 60px;
+}
+
+.navbar-side.collapsed .glyphicon {
+	font-size: 22px;
+}
+
+.navbar-side.collapsed .nav-label {
+	display: none;
+}
+
+.btn-expand-collapse {
+	position: absolute;
+	display: block;
+	left: 0px;
+	bottom:0;
+	width: 100%;
+	padding: 8px 0;
+	border-top:solid 1px #666;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.btn-expand-collapse:hover {
+	background-color: var(--side-navbar-hover-color);
+	color: white;
+}
+
+.btn-expand-collapse:active {
+	background-color: var(--side-navbar-active-color);
+
+
+}
+
+.navbar-side-menu,
+.navbar-side-menu li {
+	margin:0; padding:0;
+	list-style: none;
+}
+
+.navbar-side-menu li a {
+	display: block;
+	padding: 10px 18px;
+	text-align: left;
+	border-bottom:solid 1px #444;
+	color: white;
+	max-height: 45px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.navbar-side-menu li a:hover {
+	background-color: #303539;
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-side-menu li a .glyphicon {
+	margin-right: 6px;
+}
+
+.navbar-side-menu li a:hover .glyphicon {
+	color: white;
+}
+
+.main-content {
+	transition: var(--side-navbar-transition-time);
+	margin-top: 50px;
+	margin-left: 200px;
+	padding: 20px;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.collapsed + .main-content {
+	margin-left: 60px;
+	transition: 0.4s
+}
+
+.navbar-nav {
+	flex-direction: row;
+}
+
+.stats {
+	height: 140px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.stat {
+	transition: 0.4s;
+	margin: 10px;
+	height: 100px;
+	width: 150px;
+	padding: 0px;
+	margin-bottom: 25px;
+	text-align: center;
+	color: white;
+	box-shadow: 0px 1px 2px black;
+	overflow: hidden;
+}
+
+.stat + .right {
+	float: right;
+}
+
+.stat-hover:hover {
+	height: 125px;
+	margin-bottom: 0px;
+}
+
+.good {
+	background-color: #57B668; /* Green */
+}
+
+.medium {
+	background-color: #FFAE00; /* Green */
+}
+
+.bad {
+	background-color: #D6000F; /* Green */
+}
+
+
+.stat .label {
+	font-size: 1em;
+	padding: 5px;
+}
+
+.stat .count {
+	font-size: 1.5em;
+	background-color: rgba(0,0,0,0.2);
+	padding: 15px;
+}
+
+.thead-inverse {
+	background-color: #303539;
+
+	color: white;
+}
+
+
+
+.container {
+	margin-top: 70px;
+}
